@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.ecirstea'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
@@ -18,6 +18,8 @@ ext {
 
 dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator:2.5.3'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
